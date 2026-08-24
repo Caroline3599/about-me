@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duan Yuqing — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Fixed Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-left">Duan Yuqing</div>
+    <nav class="nav-center">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about" class="hero-section">
+    <h1 class="hero-title">DUAN YUQING</h1>
+    
+    <div class="hero-meta-row">
+      <div>Artificial Intelligence &bull; Robotics & VR</div>
+      <div>Based in<br><strong>Kuala Lumpur, Malaysia</strong></div>
+      <div>Working<br><strong>Globally</strong></div>
+    </div>
+
+    <div class="hero-bio">
+      [An Artificial Intelligence Undergraduate from APU building high-performance digital experiences where <strong>WebXR spatial computing</strong> meets <strong>robotics, machine vision, and intelligent AI models</strong>.]
+    </div>
+
+    <div class="hero-actions">
+      <span class="status-badge"><span class="green-dot"></span> OPEN TO WORK</span>
+      <a href="#experience" class="link-btn">RESUME</a>
+      <a href="#contact" class="link-btn">CONTACT</a>
+    </div>
+
+    <!-- Profile Photo Container -->
+    <div class="profile-image-container">
+      <img src="https://via.placeholder.com/400x500?text=Replace+With+Your+Photo" alt="Duan Yuqing Photo" id="profile-img">
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <h2 class="section-large-title">PROJECTS</h2>
+    
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">ALL</button>
+      <button class="filter-btn" data-filter="robotics">[Robotics & VR]</button>
+      <button class="filter-btn" data-filter="ai">[AI & Research]</button>
+      <button class="filter-btn" data-filter="software">[Software]</button>
+    </div>
+
+    <div class="projects-grid">
+      
+      <!-- Project 1: Large Featured Card -->
+      <article class="project-card large-card" data-category="robotics">
+        <div class="image-wrapper">
+          <img src="https://via.placeholder.com/1000x500?text=WebXR+%26+ROS2+Robotic+Arm" alt="WebXR Project">
+          <div class="card-overlay">
+            <p>Developed full-dimensional motion control systems for industrial arms using WebXR and ROS2 with 3D machine vision spatial processing.</p>
+          </div>
+        </div>
+        <div class="card-info">
+          <div>
+            <h3>HANDPLUS ROBOTIC</h3>
+            <p>WebXR & ROS2 VR Industrial Arm Control</p>
+          </div>
+          <span class="tag">WEBSITE</span>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card" data-category="ai">
+        <div class="image-wrapper">
+          <img src="https://via.placeholder.com/600x400?text=IEEE+CCAI+2026+Paper" alt="IEEE Research">
+          <div class="card-overlay">
+            <p>Co-authored an accepted IEEE paper verifying local-deployment large-model prototypes with dataset cleaning and R analysis.</p>
+          </div>
+        </div>
+        <div class="card-info">
+          <div>
+            <h3>IEEE CCAI 2026</h3>
+            <p>Local LLM Research & Data Analysis</p>
+          </div>
+          <span class="tag">RESEARCH</span>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card" data-category="robotics">
+        <div class="image-wrapper">
+          <img src="https://via.placeholder.com/600x400?text=IoT+Smart+Bin" alt="Smart Bin">
+          <div class="card-overlay">
+            <p>Built a web-managed autonomous bin equipped with gas detection alerts. Awarded 2nd place in APU Robotics Club competition.</p>
+          </div>
+        </div>
+        <div class="card-info">
+          <div>
+            <h3>SMART BIN</h3>
+            <p>IoT Web-Controlled Hazardous Detector</p>
+          </div>
+          <span class="tag">HARDWARE</span>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card" data-category="ai">
+        <div class="image-wrapper">
+          <img src="https://via.placeholder.com/600x400?text=AI+Dialogue+Robot" alt="AI Robot">
+          <div class="card-overlay">
+            <p>Designed conversational agent using knowledge representation and workflow logic for customized task handling.</p>
+          </div>
+        </div>
+        <div class="card-info">
+          <div>
+            <h3>AI DIALOGUE ROBOT</h3>
+            <p>Knowledge-Driven Conversational Agent</p>
+          </div>
+          <span class="tag">AI/NLP</span>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="project-card" data-category="software">
+        <div class="image-wrapper">
+          <img src="https://via.placeholder.com/600x400?text=Java+Teaching+Platform" alt="Vue Platform">
+          <div class="card-overlay">
+            <p>Operated cross-platform social media channels and built a custom Vue/EJS learning portal for Java instruction.</p>
+          </div>
+        </div>
+        <div class="card-info">
+          <div>
+            <h3>EDTECH PLATFORM</h3>
+            <p>Vue/EJS Java Teaching Portal</p>
+          </div>
+          <span class="tag">WEBSITE</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience-section">
+    <h2 class="section-large-title">EXPERIENCE</h2>
+    
+    <div class="experience-container">
+      <div class="experience-headline">
+        <h2>Experience That<br>Builds Trust</h2>
+        <div class="exp-photo-box">
+          <img src="https://via.placeholder.com/400x500?text=Office+Workspace+Photo" alt="Workspace Placeholder">
+        </div>
+      </div>
+
+      <div class="experience-list">
+        
+        <div class="exp-row">
+          <div class="exp-details">
+            <h3>Handplus Robotic</h3>
+            <p class="exp-role">AI Developer</p>
+            <p class="exp-text">Developed VR human‑robot interaction systems using WebXR and ROS2, enabling full‑dimensional motion control for industrial robotic arms. Applied 3D vision and collaborated across embedded teams.</p>
+          </div>
+          <div class="exp-date">Jul 2026 – Present</div>
+        </div>
+
+        <div class="exp-row">
+          <div class="exp-details">
+            <h3>TestDaily</h3>
+            <p class="exp-role">Teaching Assistant</p>
+            <p class="exp-text">Provided assignment support, graded FRQ open‑response questions, managed group‑chat inquiries, and delivered structured feedback to students.</p>
+          </div>
+          <div class="exp-date">Oct 2025 – Feb 2026</div>
+        </div>
+
+        <div class="exp-row">
+          <div class="exp-details">
+            <h3>Vacation Research</h3>
+            <p class="exp-role">AI & Data Analysis Researcher</p>
+            <p class="exp-text">Co‑author of an accepted paper at CCAI 2026 (EI/Scopus‑indexed IEEE conference). Responsible for dataset cleaning, questionnaire input, and R-language scripts.</p>
+          </div>
+          <div class="exp-date">Dec 2025 – May 2026</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <h2 class="section-large-title">SKILLS</h2>
+    
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon py">Py</div>
+        <div>
+          <h4>Python</h4>
+          <p>AI / Data Analysis</p>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon ros">ROS</div>
+        <div>
+          <h4>ROS2 & WebXR</h4>
+          <p>Robotics & VR Control</p>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon js">JS</div>
+        <div>
+          <h4>JavaScript</h4>
+          <p>Web Development</p>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon c">C++</div>
+        <div>
+          <h4>C / C++</h4>
+          <p>Embedded / Software</p>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon r">R</div>
+        <div>
+          <h4>R Language</h4>
+          <p>Statistical Scripts</p>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon cad">3D</div>
+        <div>
+          <h4>SolidWorks</h4>
+          <p>3D CAD Design</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Footer -->
+  <footer id="contact" class="footer">
+    <h2>Get in touch:</h2>
+    <p class="footer-email"><a href="mailto:duanyuqing2025@163.com">duanyuqing2025@163.com</a></p>
+    <div class="footer-socials">
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+      <a href="#">WhatsApp: (+86) 15773652978</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
