@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duan Yuqing — Portfolio</title>
+    <link rel="icon" type="image/png" href="./image/1.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- 自定义圆圈光标（专用于 Interests 区域） -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+
+    <!-- Fixed Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">Duan Yuqing</div>
+        <nav class="nav-center">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#interests">Interests</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="hero-section">
+        <h1 class="hero-title">DUAN YUQING</h1>
+
+        <div class="hero-meta-row">
+            <div>Artificial Intelligence &bull; Robotics & VR</div>
+            <div>Based in<br><strong>Kuala Lumpur, Malaysia</strong></div>
+            <div>Working<br><strong>Globally</strong></div>
+        </div>
+
+        <div class="hero-bio">
+            [An Artificial Intelligence Undergraduate from APU building high-performance digital experiences where
+            <strong>WebXR spatial computing</strong> meets <strong>robotics, machine vision, and intelligent AI
+                models</strong>.]
+        </div>
+
+        <div class="hero-actions">
+            <span class="status-badge"><span class="green-dot"></span> OPEN TO WORK</span>
+            <a href="#experience" class="link-btn">RESUME</a>
+            <a href="#contact" class="link-btn">CONTACT</a>
+        </div>
+
+        <!-- Profile Photo Container -->
+        <div class="profile-image-container">
+            <img src="./image/00.jpg" alt="Duan Yuqing Photo" id="profile-img">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-large-title">PROJECTS</h2>
+
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">ALL</button>
+            <button class="filter-btn" data-filter="robotics">[Robotics & VR]</button>
+            <button class="filter-btn" data-filter="ai">[AI & Research]</button>
+            <button class="filter-btn" data-filter="software">[Software]</button>
+        </div>
+
+        <div class="projects-grid">
+            <article class="project-card large-card" data-category="robotics">
+                <div class="image-wrapper">
+                    <img src="./image/11.png" alt="WebXR Project">
+                    <div class="card-overlay">
+                        <p>Developed full-dimensional motion control systems for industrial arms using WebXR and ROS2
+                            with 3D machine vision spatial processing.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div>
+                        <h3>
+                            <a href="https://zcne70tj2o23.feishu.cn/wiki/WL0NwxxXiiEEkZkXCIscnocUnAc" target="_blank"
+                                class="project-title-link">
+                                HANDPLUS ROBOTIC
+                            </a>
+                        </h3>
+                        <p>WebXR & ROS2 VR Industrial Arm Control</p>
+                    </div>
+                    <span class="tag">WEBSITE</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="ai">
+                <div class="image-wrapper">
+                    <img src="./image/11.png" alt="IEEE Research">
+                    <div class="card-overlay">
+                        <p>Co-authored an accepted IEEE paper verifying local-deployment large-model prototypes with
+                            dataset cleaning and R analysis.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div>
+                        <h3>IEEE CCAI 2026</h3>
+                        <p>Local LLM Research & Data Analysis</p>
+                    </div>
+                    <span class="tag">RESEARCH</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="robotics">
+                <div class="image-wrapper">
+                    <img src="./image/11.png" alt="Smart Bin">
+                    <div class="card-overlay">
+                        <p>Built a web-managed autonomous bin equipped with gas detection alerts. Awarded 2nd place in
+                            APU Robotics Club competition.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div>
+                        <h3>SMART BIN</h3>
+                        <p>IoT Web-Controlled Hazardous Detector</p>
+                    </div>
+                    <span class="tag">HARDWARE</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="ai">
+                <div class="image-wrapper">
+                    <img src="./11.png" alt="AI Robot">
+                    <div class="card-overlay">
+                        <p>Designed conversational agent using knowledge representation and workflow logic for
+                            customized task handling.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div>
+                        <h3>AI DIALOGUE ROBOT</h3>
+                        <p>Knowledge-Driven Conversational Agent</p>
+                    </div>
+                    <span class="tag">AI/NLP</span>
+                </div>
+            </article>
+
+            <article class="project-card" data-category="software">
+                <div class="image-wrapper">
+                    <img src="./image/11.png" alt="Vue Platform">
+                    <div class="card-overlay">
+                        <p>Operated cross-platform social media channels and built a custom Vue/EJS learning portal for
+                            Java instruction.</p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div>
+                        <h3>EDTECH PLATFORM</h3>
+                        <p>Vue/EJS Java Teaching Portal</p>
+                    </div>
+                    <span class="tag">WEBSITE</span>
+                </div>
+            </article>
+
+            <article class="project-card hidden-project" data-category="software" style="display: none;">
+                <div class="image-wrapper">
+                    <img src="./image/11.png" alt="Extra Project">
+                    <div class="card-overlay">
+                        <p>Additional full-stack microservice architecture project built with modern cloud frameworks.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-info">
+                    <div>
+                        <h3>CLOUD MICROSERVICE</h3>
+                        <p>Scalable Backend Architecture</p>
+                    </div>
+                    <span class="tag">SYSTEM</span>
+                </div>
+            </article>
+        </div>
+
+        <div class="view-more-container">
+            <button id="view-more-btn" class="view-more-btn">VIEW MORE PROJECTS</button>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <h2 class="section-large-title">EXPERIENCE</h2>
+
+        <div class="experience-container">
+            <div class="experience-headline">
+                <h2>Experience That<br>Builds Trust</h2>
+                <div class="exp-photo-box">
+                    <img id="exp-active-img" src="./image/11.png" alt="Workspace Photo">
+                </div>
+            </div>
+
+            <div class="experience-list">
+                <div class="exp-row" data-img="./image/11.png">
+                    <div class="exp-details">
+                        <h3>Handplus Robotic</h3>
+                        <p class="exp-role">AI Developer</p>
+                        <p class="exp-text">Developed VR human‑robot interaction systems using WebXR and ROS2, enabling
+                            full‑dimensional motion control for industrial robotic arms.</p>
+                    </div>
+                    <div class="exp-date">Jul 2026 – Present</div>
+                </div>
+
+                <div class="exp-row" data-img="./image/11.png">
+                    <div class="exp-details">
+                        <h3>TestDaily</h3>
+                        <p class="exp-role">Teaching Assistant</p>
+                        <p class="exp-text">Provided assignment support, graded FRQ open‑response questions, managed
+                            group‑chat inquiries, and delivered structured feedback to students.</p>
+                    </div>
+                    <div class="exp-date">Oct 2025 – Feb 2026</div>
+                </div>
+
+                <div class="exp-row" data-img="./image/11.png">
+                    <div class="exp-details">
+                        <h3>Vacation Research</h3>
+                        <p class="exp-role">AI & Data Analysis Researcher</p>
+                        <p class="exp-text">Co‑author of an accepted paper at CCAI 2026 (EI/Scopus‑indexed IEEE
+                            conference).</p>
+                    </div>
+                    <div class="exp-date">Dec 2025 – May 2026</div>
+                </div>
+
+                <div class="exp-row" data-img="./image/1.jpg">
+                    <div class="exp-details">
+                        <h3>Small Car</h3>
+                        <p class="exp-role">AI & Data Analysis Researcher</p>
+                        <p class="exp-text">Co‑author of an accepted paper at CCAI 2026 (EI/Scopus‑indexed IEEE
+                            conference).</p>
+                    </div>
+                    <div class="exp-date">Dec 2025 – May 2026</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 兴趣板块 (Interests Section - 图2&图3交互样式) -->
+    <section id="interests" class="interests-section">
+        <h2 class="section-large-title">ACTIVITIES</h2>
+
+        <div class="interests-container">
+            <!-- 左侧展示区：图 + 介绍 -->
+            <div class="interest-preview">
+                <div class="interest-img-wrapper">
+                    <img id="interest-img" src="./image/11.png" alt="Interest Preview">
+                </div>
+                <div class="interest-info">
+                    <div class="interest-text-content">
+                        <h3 id="interest-title">Lion Dance Club (舞狮社)</h3>
+                        <p id="interest-desc">Active performer and event lead in traditional lion dance routines,
+                            integrating rhythm, movement coordination, and cultural heritage promotion across campus
+                            events.</p>
+                    </div>
+                    <!-- 专门的时间显示 -->
+                    <div class="interest-time-badge">
+                        <span id="interest-time">Mar 2026 – Jul 2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 右侧 Button 按钮交互区 -->
+            <div class="interest-tags-wrapper">
+                <div class="tags-header">ACTIVITIES & PASSIONS</div>
+                <div class="tags-grid">
+                    <button class="interest-tag active" data-img="./image/11.png" data-title="Lion Dance Club (舞狮社)"
+                        data-desc="Active performer and team lead in traditional lion dance routines, integrating rhythm, coordination, and heritage performance."
+                        data-time="Mar 2026 – Jul 2026">
+                        <span>🦁</span> Lion Dance
+                    </button>
+
+                    <button class="interest-tag" data-img="./image/11.png" data-title="Robotics Club (机器人社团)"
+                        data-desc="Participated in autonomous mobile robot contests, hardware debugging, and open-source embedded firmware prototyping."
+                        data-time="Sep 2025 – Feb 2026">
+                        <span>🤖</span> Robotics Club
+                    </button>
+
+                    <button class="interest-tag" data-img="./image/11.png" data-title="Photography (摄影)"
+                        data-desc="Capturing spatial composition, street life, and technical hardware aesthetics with digital mirrorless gear."
+                        data-time="Jan 2025 – Present">
+                        <span>📷</span> Photography
+                    </button>
+
+                    <button class="interest-tag" data-img="./22.png" data-title="Fine Art & Painting (绘画)"
+                        data-desc="Exploring visual storytelling through digital sketching, concept art draftings, and UI graphic design."
+                        data-time="Continuous">
+                        <span>🎨</span> Painting
+                    </button>
+
+                    <button class="interest-tag" data-img="./image/11.png" data-title="Origami Engineering (折纸)"
+                        data-desc="Focusing on complex geometric paper folding and compliant mechanical structure prototypes."
+                        data-time="Hobby">
+                        <span>📄</span> Origami
+                    </button>
+
+                    <button class="interest-tag" data-img="./image/33.png" data-title="Scale Modeling (模型制作)"
+                        data-desc="Building customized sci-fi, mecha, and mechanical scale models with precise airbrushing and weathering."
+                        data-time="Hobby">
+                        <span>🛠️</span> Scale Modeling
+                    </button>
+
+                    <button class="interest-tag" data-img="./image/11.png" data-title="Sports & Fitness (运动)"
+                        data-desc="Regular swimming, badminton, and outdoor endurance workouts to keep peak mental and physical energy."
+                        data-time="Weekly">
+                        <span>🏸</span> Sports
+                    </button>
+
+                    <button class="interest-tag" data-img="./image/11.png" data-title="Editing"
+                        data-desc="editing and producing short-form videos for social media, focusing on storytelling and visual impact."
+                        data-time="Weekly">
+                        <span>🏸</span> Editing
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bottom-wrapper">
+        <!-- 证书板块 (Certificates Section - 图1 横向滚轮下滑展示) -->
+        <section id="certificates" class="cert-scroll-section">
+            <div class="cert-sticky-wrapper">
+                <h2 class="section-large-title cert-title">CERTIFICATES</h2>
+
+                <div class="cert-track-container">
+                    <div class="cert-track" id="cert-track">
+
+                        <!-- Card 1 -->
+                        <div class="cert-card">
+                            <div class="cert-img-box">
+                                <img src="./image/11.png" alt="Certificate 1">
+                            </div>
+                            <div class="cert-meta">
+                                <span class="cert-num">01</span>
+                                <h3>APU Robotics Competition - 2nd Place</h3>
+                                <p>Asia Pacific University &bull; 2025</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="cert-card">
+                            <div class="cert-img-box">
+                                <img src="./image/11.png" alt="Certificate 2">
+                            </div>
+                            <div class="cert-meta">
+                                <span class="cert-num">02</span>
+                                <h3>IEEE CCAI Conference Acceptance</h3>
+                                <p>IEEE Publication &bull; 2026</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="cert-card">
+                            <div class="cert-img-box">
+                                <img src="./image/11.png" alt="Certificate 3">
+                            </div>
+                            <div class="cert-meta">
+                                <span class="cert-num">03</span>
+                                <h3>Dean's Honor List Award</h3>
+                                <p>School of Technology &bull; 2025</p>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="cert-card">
+                            <div class="cert-img-box">
+                                <img src="./image/22.png" alt="Certificate 4">
+                            </div>
+                            <div class="cert-meta">
+                                <span class="cert-num">04</span>
+                                <h3>ROS2 & Autonomous Systems Certification</h3>
+                                <p>Robotics Academy &bull; 2026</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-large-title">SKILLS</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-icon py">Py</div>
+                <div>
+                    <h4>Python</h4>
+                    <p>AI / Data Analysis</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon ros">ROS</div>
+                <div>
+                    <h4>ROS2 & WebXR</h4>
+                    <p>Robotics & VR Control</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon js">JS</div>
+                <div>
+                    <h4>JavaScript</h4>
+                    <p>Web Development</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon c">C++</div>
+                <div>
+                    <h4>C / C++</h4>
+                    <p>Embedded / Software</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon r">R</div>
+                <div>
+                    <h4>R Language</h4>
+                    <p>Statistical Scripts</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon cad">3D</div>
+                <div>
+                    <h4>SolidWorks</h4>
+                    <p>3D CAD Design</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon cad">Edit</div>
+                <div>
+                    <h4>Editing</h4>
+                    <p>edit videos</p>
+                </div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-icon r">R</div>
+                <div>
+                    <h4>R Language</h4>
+                    <p>Statistical Scripts</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon cad">3D</div>
+                <div>
+                    <h4>SolidWorks</h4>
+                    <p>3D CAD Design</p>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon cad">Edit</div>
+                <div>
+                    <h4>Editing</h4>
+                    <p>edit videos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer id="contact" class="footer">
+        <h2>Get in touch:</h2>
+        <p class="footer-email"><a href="mailto:daydayup.dyq@gmail.com">daydayup.dyq@gmail.com</a></p>
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/yuqing-duan-b89274387/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Caroline3599" target="_blank">GitHub</a>
+            <a href="#">WhatsApp: (+86) 15773652978</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
